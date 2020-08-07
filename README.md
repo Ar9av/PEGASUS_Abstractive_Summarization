@@ -1,5 +1,9 @@
 # PEGASUS_Abstractive_Summarization
 `
+git clone https://github.com/Ar9av/PEGASUS_Abstractive_Summarization
+`
+
+`
 cd PEGASUS_Abstractive_Summarization/
 `
 <br />
@@ -23,7 +27,6 @@ cp changed_files/public_params.py pegasus/pegasus/params/
 `
 sh run2.sh
 `
-
 <br />
 `
 python3 create_input_tfrecord.py
