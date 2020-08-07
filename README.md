@@ -23,3 +23,8 @@ cp changed_files/public_params.py pegasus/pegasus/params/
 `
 sh run2.sh
 `
+
+<br />
+`
+python3 create_input_tfrecord.py
+`
