@@ -116,7 +116,7 @@ def transformer_params(patterns, param_overrides):
 
   return hparams
 
-save_path = "tfrecord:/pegasus/pegasus/data/testdata/test_pattern_1.tfrecord"
+save_path = "tfrecord:pegasus/data/testdata/test_pattern_1.tfrecord"
 @registry.register("cnn_dailymail_transformer")
 def cnn_dailymail(param_overrides):
   return transformer_params(

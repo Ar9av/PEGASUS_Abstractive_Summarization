@@ -29,6 +29,3 @@ with tf.io.TFRecordWriter(save_path) as writer:
             )
         )
         writer.write(example.SerializeToString())
-
-
-subprocess.call(['sh', 'eval.sh'])
