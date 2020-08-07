@@ -1,0 +1,1 @@
+python3 pegasus/pegasus/bin/evaluate.py --params=cnn_dailymail_transformer --param_overrides=vocab_filename=pegasus/ckpt/c4.unigram.newline.10pct.96000.model,batch_size=1,beam_size=2,beam_alpha=0.6 --model_dir=pegasus/ckpt/cnn_dailymail/model.ckpt-210000.data-00000-of-00001

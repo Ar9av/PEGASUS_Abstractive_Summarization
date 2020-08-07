@@ -15,7 +15,7 @@ input_dict = dict(
     targets=[""]
     )
 
-save_path = "./pegasus/data/testdata/test_pattern_1.tfrecord"
+save_path = "pegasus/pegasus/data/testdata/test_pattern_1.tfrecord"
 data = pd.DataFrame(input_dict)
 with tf.io.TFRecordWriter(save_path) as writer:
     for row in data.values:
@@ -31,4 +31,4 @@ with tf.io.TFRecordWriter(save_path) as writer:
         writer.write(example.SerializeToString())
 
 
-subprocess.call(['sh', 'python3 pegasus/bin/evaluate.py --params=cnn_dailymail_transformer --param_overrides=vocab_filename=pegasus/ckpt/pegasus_ckpt/c4.unigram.newline.10pct.96000.model,batch_size=1,beam_size=2,beam_alpha=0.6 --model_dir=pegasus/ckpt/pegasus_ckpt/cnn_dailymail/model.ckpt-210000.data-00000-of-00001'])
+subprocess.call(['sh', 'run_python_file.sh'])
