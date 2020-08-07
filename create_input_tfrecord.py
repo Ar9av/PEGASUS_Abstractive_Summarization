@@ -31,4 +31,4 @@ with tf.io.TFRecordWriter(save_path) as writer:
         writer.write(example.SerializeToString())
 
 
-subprocess.call(['sh', 'run_python_file.sh'])
+subprocess.call(['sh', 'eval.sh'])
